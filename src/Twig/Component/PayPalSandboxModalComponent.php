@@ -88,4 +88,9 @@ final class PayPalSandboxModalComponent
     {
         return $this->formFactory->create(PayPalSandboxCredentialsType::class);
     }
+
+    protected function getDataModelValue(): string
+    {
+        return 'norender|on(change)|*';
+    }
 }
